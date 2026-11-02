@@ -5,8 +5,8 @@ before coding starts, so the commit hash timestamps this plan.
 
 ## Population (fixed)
 
-There are 91 papers in the llm-trading-papers corpus at SHA `3922a878…` plus the
-2026-11-02 harvest. A paper is in the population if its theme is one of 00–07, it is
+There are 91 papers among the 233 records of `papers.jsonl` in llm-trading-papers (last changed at commit `a78916a`; the
+eight papers harvested on 2026-11-02 are not yet extracted and are excluded). A paper is in the population if its theme is one of 00–07, it is
 an LLM agent or alpha-mining paper, or it reports a headline Sharpe ratio or annual
 return, and its full text is available. The list is
 `evidence-audit/population.json`. Papers added to the corpus later are not added
