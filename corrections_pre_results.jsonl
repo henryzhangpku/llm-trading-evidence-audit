@@ -1,0 +1,2 @@
+{"id": "2605.05580", "field": "leakage", "from": "live", "to": "acknowledged", "why": "rubric codes the main (abstract) experiment, a backtest that the paper says may overlap training data; the live phase is separate"}
+{"id": "2605.12532", "field": "test_months", "from": 0, "to": 0.5, "why": "consistency: any non-zero window below two weeks is coded 0.5 (as 2604.14199)"}

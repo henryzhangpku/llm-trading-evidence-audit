@@ -1,0 +1,61 @@
+{
+ "N": 90,
+ "quote_errors": [],
+ "n_trading_test": 74,
+ "H1": {
+  "count_or_adjusted": 0.40540540540540543,
+  "adjusted": 0.0945945945945946,
+  "pass": false
+ },
+ "H2": {
+  "n": 68,
+  "median_months": 12.0,
+  "pass": true
+ },
+ "H3": {
+  "n": 12,
+  "rho": -0.22616111767687025,
+  "p_one_sided": 0.23908804559772012,
+  "pass": false
+ },
+ "H4": {
+  "n_not_after_cutoff": 50,
+  "share_none_or_ack": 0.98,
+  "pass": true
+ },
+ "H5": {
+  "n_cost": 10,
+  "n_nocost": 2,
+  "median_cost": 1.61,
+  "median_nocost": 3.46,
+  "p_one_sided": 0.09514524273786311,
+  "pass": false
+ },
+ "secondary": {
+  "code_rate": 0.2777777777777778,
+  "bh_rate": 0.6216216216216216,
+  "live_rate": 0.08108108108108109,
+  "costs": {
+   "none": 38,
+   "flat": 29,
+   "realistic": 7,
+   "na": 16
+  },
+  "leakage": {
+   "none": 29,
+   "acknowledged": 24,
+   "post_cutoff": 14,
+   "live": 6,
+   "chrono": 1,
+   "na": 16
+  },
+  "trials": {
+   "none": 53,
+   "mentioned": 7,
+   "count": 23,
+   "adjusted": 7
+  },
+  "median_sharpe": 1.81,
+  "n_sharpe": 12
+ }
+}

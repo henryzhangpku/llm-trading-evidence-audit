@@ -1,0 +1,70 @@
+{
+ "N": 91,
+ "quote_errors": [],
+ "n_trading_test": 75,
+ "H1": {
+  "count_or_adjusted": 0.4,
+  "adjusted": 0.09333333333333334,
+  "pass": false
+ },
+ "H2": {
+  "n": 69,
+  "median_months": 12,
+  "pass": true
+ },
+ "H3": {
+  "n": 13,
+  "rho": -0.10307046491967335,
+  "p_one_sided": 0.36493175341232936,
+  "pass": false
+ },
+ "H4": {
+  "n_not_after_cutoff": 54,
+  "share_none_or_ack": 1.0,
+  "pass": true
+ },
+ "H5": {
+  "n_cost": 11,
+  "n_nocost": 2,
+  "median_cost": 1.62,
+  "median_nocost": 3.46,
+  "p_one_sided": 0.10269486525673717,
+  "pass": false
+ },
+ "secondary": {
+  "code_rate": 0.27472527472527475,
+  "bh_rate": 0.6266666666666667,
+  "live_rate": 0.08,
+  "costs": {
+   "none": 38,
+   "flat": 30,
+   "realistic": 7,
+   "na": 16
+  },
+  "leakage": {
+   "none": 30,
+   "acknowledged": 24,
+   "post_cutoff": 14,
+   "live": 6,
+   "chrono": 1,
+   "na": 16
+  },
+  "trials": {
+   "none": 54,
+   "mentioned": 7,
+   "count": 23,
+   "adjusted": 7
+  },
+  "median_sharpe": 2.0,
+  "n_sharpe": 13
+ },
+ "agreement": {
+  "costs": 1.0,
+  "leakage": 0.8888888888888888,
+  "trials": 0.8888888888888888,
+  "baseline_bh": 0.9444444444444444,
+  "code": 0.8888888888888888,
+  "test_months_within_10pct": 0.9444444444444444,
+  "sharpe_within_5pct": 0.9444444444444444
+ }
+}

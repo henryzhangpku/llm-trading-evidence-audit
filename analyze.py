@@ -73,7 +73,8 @@ def main():
     if len(both) >= 5:
         rho, p = perm_p_spearman_neg([a for a, _ in both], [b for _, b in both])
         out["H3"] = {"n": len(both), "rho": rho, "p_one_sided": p, "pass": rho < 0 and p < 0.05}
-    pre = [c for c in trade if c.get("leakage") not in ("post_cutoff", "live", "chrono")]
+    # Pre-registered definition: test window not known to lie wholly after the LLM's training cutoff.
+    pre = [c for c in trade if c.get("llm_cutoff_before_test") != "y"]
     out["H4"] = {"n_not_after_cutoff": len(pre),
                  "share_none_or_ack": (sum(c.get("leakage") in ("none", "acknowledged") for c in pre) / len(pre)) if pre else None}
     out["H4"]["pass"] = bool(pre) and out["H4"]["share_none_or_ack"] > 0.5
