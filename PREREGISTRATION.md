@@ -5,7 +5,7 @@ before coding starts, so the commit hash timestamps this plan.
 
 ## Population (fixed)
 
-There are 91 papers among the 233 records of `papers.jsonl` in llm-trading-papers (last changed at commit `a78916a`; the
+There are 91 papers among the 233 records of `papers.jsonl` in llm-trading-papers (last changed at commit `a4f4097`; the
 eight papers harvested on 2026-11-02 are not yet extracted and are excluded). A paper is in the population if its theme is one of 00–07, it is
 an LLM agent or alpha-mining paper, or it reports a headline Sharpe ratio or annual
 return, and its full text is available. The list is

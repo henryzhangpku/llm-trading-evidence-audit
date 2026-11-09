@@ -13,3 +13,7 @@ Every change made after coding began, in order.
    1.0 by construction. The pre-registration defines the subset by the training
    cutoff (`llm_cutoff_before_test` not "y"). The script now uses that. No codes
    changed. The first run's output is kept in `results_run1.json`.
+
+## 2026-11-02: commit hashes rewritten (administrative, after results)
+
+The llm-trading-papers and qs-papers histories were rewritten to change the author email and remove AI-attribution trailers. Trees and dates are unchanged. The population pointer in PREREGISTRATION.md is updated from the old hash a78916a to its new equivalent. The old-to-new map is in `HASHMAP.md` in each repository. No content, coding or result changed.

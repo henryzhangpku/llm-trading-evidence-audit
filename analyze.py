@@ -6,7 +6,9 @@ Every number in the paper comes from this script's output.
 import json, re, sys, os, math, random
 from statistics import median
 
-CORPUS = os.path.expanduser("~/repo/llm-trading-papers")
+# Folder holding papers.jsonl and the extracted full texts (text_path in each
+# record). The texts are not redistributed here; see the README.
+CORPUS = os.path.expanduser(os.environ.get("EVIDENCE_AUDIT_CORPUS", "corpus"))
 norm = lambda s: re.sub(r"\s+", " ", s or "").strip().lower()
 
 def load(p):
@@ -56,7 +58,8 @@ def mw_p_less(a, b, n=20000, seed=7):
 def main():
     codes = load(sys.argv[1]); N = len(codes)
     out = {"N": N}
-    out["quote_errors"] = quote_check(codes)
+    out["quote_errors"] = (quote_check(codes) if os.path.exists(f"{CORPUS}/papers.jsonl")
+                           else "skipped: no corpus (set EVIDENCE_AUDIT_CORPUS)")
     trade = [c for c in codes if c.get("costs") != "na"]
     out["n_trading_test"] = len(trade)
     tr = [c.get("trials") for c in trade]
