@@ -38,7 +38,7 @@ the median test window is 12 months, and a quarter of windows are six months or
 shorter. Among the 51 papers whose test window is not known to lie after the
 model's training cutoff, 98\% neither test after the cutoff, nor evaluate live,
 nor use a chronologically consistent model. Only 9\% report a
-multiplicity-adjusted result, and just five papers combine modelled costs,
+multiplicity-adjusted result, and just five papers combine deducted costs,
 a leakage control and a reported trial count. Two of the five hypotheses
 pass (short windows; uncontrolled look-ahead). Three fail: more papers report a
 trial count than we predicted, though most of those counts are repeated random
@@ -235,7 +235,7 @@ careful evaluation faster than its practice. A buy-and-hold baseline is
 standard (63\%), and repeated seeds are common. The controls that address the
 two failure modes particular to LLM backtests are rare: costs that would
 survive contact with execution, and protection against a model that has read
-the test period. Only five papers combine modelled costs, a leakage control and
+the test period. Only five papers combine deducted costs, a leakage control and
 a reported trial count, and one of those also releases code.
 
 These are not reasons to dismiss individual papers. Several in the population
@@ -244,7 +244,7 @@ benchmarks~\cite{li2025timetravel}, forward-logged
 nowcasts~\cite{chen2026nowcasting}, leakage-safe discovery with trial-count
 deflation~\cite{gencay2026honest}, production
 records~\cite{barton2026production}, audits that separate an agent's selection
-skill from passive exposure~\cite{xu2026audit}, and contamination
+skill from passive exposure~\cite{chen2026audit}, and contamination
 tests~\cite{gao2026lookahead}. The counts say these are exceptions.
 
 \paragraph{A reporting minimum.} Six lines would let a reader judge any LLM
@@ -257,7 +257,7 @@ trading result in a minute:
 reported one;
 \item a multiplicity-aware statistic (deflated Sharpe or a reality check) at that
 count;
-\item a benchmark-relative or composition-matched null~\cite{xu2026audit}.
+\item a benchmark-relative or composition-matched null~\cite{chen2026audit}.
 \end{enumerate}
 A research loop can produce these lines by construction rather than by
 discipline. Our companion paper~\cite{zhang2026hardtofool} describes one that
@@ -320,6 +320,12 @@ and H.~Goodreau.
 population-scale record from two fleets.
 \newblock arXiv:2609.05663, 2026.
 
+\bibitem{chen2026audit}
+M.~Chen, Y.~Xu, H.~Chen, Y.~Lu, and W.~Jin.
+\newblock Agent policy-value audit: separating transition composition from event
+selection in financial LLM agents.
+\newblock arXiv:2610.04040, 2026.
+
 \bibitem{chen2026nowcasting}
 Z.~Chen and D.~Pu.
 \newblock Autonomous market intelligence: agentic AI nowcasting predicts stock
@@ -345,7 +351,7 @@ P.~R. Hansen.
 
 \bibitem{harvey2016cross}
 C.~R. Harvey, Y.~Liu, and H.~Zhu.
-\newblock \ldots{} and the cross-section of expected returns.
+\newblock \ldots and the cross-section of expected returns.
 \newblock \emph{Review of Financial Studies}, 29(1):5--68, 2016.
 
 \bibitem{he2025chrono}
@@ -391,14 +397,8 @@ H.~White.
 \newblock A reality check for data snooping.
 \newblock \emph{Econometrica}, 68(5):1097--1126, 2000.
 
-\bibitem{xu2026audit}
-Y.~Xu, H.~Chen, M.~Chen, Y.~Lu, and W.~Jin.
-\newblock Agent policy-value audit: separating transition composition from event
-selection in financial LLM agents.
-\newblock arXiv:2610.04040, 2026.
-
 \bibitem{yao2026execution}
-J.~Yao, Z.~Zheng, and B.~Li.
+J.~Yao, Z.~Zheng, B.~Li, and J.~Long.
 \newblock Execution realism and reproducibility in LLM-based trading systems: a
 systematic scoping review and evidence audit.
 \newblock arXiv:2606.08285, 2026.
@@ -412,8 +412,8 @@ H.~Zhang.
 \bibitem{zhang2026hardtofool}
 H.~Zhang.
 \newblock Hard to fool: a bounded LLM research loop for quantitative finance,
-and what two dozen pre-registered campaigns found.
-\newblock Working paper, 2026.
+and what two dozen campaigns found.
+\newblock arXiv:2611.06607, 2026.
 
 \end{thebibliography}
 
