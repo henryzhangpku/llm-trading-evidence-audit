@@ -2,7 +2,7 @@
 
 Data, code and paper for **"Short Windows, Unmodelled Costs, Unknown Cutoffs: A
 Pre-Registered Evidence Audit of 91 LLM Trading Papers"** by Henry Zhang
-([`main.pdf`](main.pdf)).
+([arXiv:2611.18934](https://arxiv.org/abs/2611.18934) · [SSRN](https://ssrn.com/abstract=7687481) · [`main.pdf`](main.pdf)).
 
 Papers on LLM trading agents and alpha mining report Sharpe ratios that would
 be remarkable anywhere else in empirical finance. This audit codes the evidence
